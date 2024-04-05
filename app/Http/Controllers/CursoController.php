@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class CursoController extends Controller
 {
 
-public function create(){
 
+   public function create(){
+      return view('cursos.create');
 
-    return view('formulario');
+  }
+
+  public function store(){
+
+      return 'hola desde store';
+  }
+
 
  }
 
- public function store(Request $request){
 
-    return $request->num1;
-
-
- }
-
-}
